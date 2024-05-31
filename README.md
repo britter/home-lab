@@ -11,3 +11,9 @@ For machine provisioning see [nix-configuration](https://github.com/britter/nix-
 ```
 terraform import proxmox_vm_qemu.<resource name> pve/vm/<vmid>
 ```
+
+### Recreating a VM
+
+```
+terraform taint proxmox_vm_qemu.<resource name>
+```
