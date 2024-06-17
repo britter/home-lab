@@ -1,9 +1,9 @@
-resource "proxmox_vm_qemu" "cyberoffice" {
+resource "proxmox_vm_qemu" "watchtower" {
 
   target_node = "pve"
-  vmid        = "200"
-  name        = "cyberoffice"
-  desc        = "VM running office related services"
+  vmid        = "100"
+  name        = "watchtower"
+  desc        = "VM running monitoring stack"
   tags        = "nixos;linux;production"
 
   onboot  = true
@@ -36,7 +36,7 @@ resource "proxmox_vm_qemu" "cyberoffice" {
       scsi0 {
         disk {
           storage = "default-pool"
-          size    = "64G"
+          size    = "512G"
         }
       }
     }
