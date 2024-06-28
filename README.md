@@ -1,19 +1,6 @@
 # home-lab
 
-Terraform configurations for managing VMs in my Proxmox based home lab.
+IaC configurations for my home lab.
 
-For machine provisioning see [nix-configuration](https://github.com/britter/nix-configuration).
-
-## Useful commands
-
-### Importing an existing VM
-
-```
-terraform import proxmox_vm_qemu.<resource name> pve/vm/<vmid>
-```
-
-### Recreating a VM
-
-```
-terraform taint proxmox_vm_qemu.<resource name>
-```
+Most machines are managed using [NixOS](https://nixos.org).
+The NixOS configurations live in a dedicated repository at https://github.com/britter/nix-configuration.
