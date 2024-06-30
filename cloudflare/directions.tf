@@ -18,6 +18,14 @@ resource "cloudflare_record" "adguard" {
   proxied = false
 }
 
+resource "cloudflare_record" "homepage" {
+  zone_id = var.cloudflare_zone_id
+  name    = "home"
+  value   = local.directions_ip
+  type    = "A"
+  proxied = false
+}
+
 resource "cloudflare_record" "fritz_box" {
   zone_id = var.cloudflare_zone_id
   name    = "fritz-box"
