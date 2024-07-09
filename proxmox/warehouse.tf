@@ -39,6 +39,12 @@ resource "proxmox_vm_qemu" "warehouse" {
           size    = "64G"
         }
       }
+      scsi1 {
+        disk {
+          storage = "default-pool"
+          size    = "6T"
+        }
+      }
     }
   }
 }
