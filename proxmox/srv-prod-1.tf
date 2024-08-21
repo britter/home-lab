@@ -1,8 +1,8 @@
-resource "proxmox_vm_qemu" "watchtower" {
+resource "proxmox_vm_qemu" "srv_prod_1" {
 
   target_node = "pve"
-  vmid        = "100"
-  name        = "watchtower"
+  vmid        = "211"
+  name        = "srv-prod-1"
   desc        = "VM running monitoring stack"
   tags        = "nixos;linux;production"
 
