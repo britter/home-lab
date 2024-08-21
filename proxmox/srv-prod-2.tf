@@ -1,8 +1,8 @@
-resource "proxmox_vm_qemu" "cyberoffice" {
+resource "proxmox_vm_qemu" "srv_prod_2" {
 
   target_node = "pve"
-  vmid        = "200"
-  name        = "cyberoffice"
+  vmid        = "212"
+  name        = "srv-prod-2"
   desc        = "VM running office related services"
   tags        = "nixos;linux;production"
 
