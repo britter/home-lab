@@ -5,7 +5,7 @@ locals {
 resource "cloudflare_record" "directions_host" {
   zone_id = var.cloudflare_zone_id
   name    = "directions"
-  value   = local.watchtower_ip
+  value   = local.directions_ip
   type    = "A"
   proxied = false
 }
