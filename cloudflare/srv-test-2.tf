@@ -10,8 +10,6 @@ resource "cloudflare_record" "srv_test_2_wildcard" {
   proxied = false
 }
 
-data "cloudflare_api_token_permission_groups" "all" {}
-
 resource "cloudflare_api_token" "srv_test_2_acme_token" {
   name = "srv-test-2 acme token"
 
