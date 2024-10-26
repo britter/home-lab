@@ -12,9 +12,6 @@
           terraform
           terraform-ls
         ];
-        shellHook = ''
-          fish
-        '';
       };
     }
   );
